@@ -119,6 +119,7 @@ h2{font-size:1.1rem;letter-spacing:0}
 .pi .chip{padding:3px 12px;font-size:.9rem}
 .pi .a p{font-size:1.02rem;line-height:1.55}
 .sk li{padding:8px 12px}
-.home .ph{background:radial-gradient(ellipse at 50% 38%,#2c5a4f 0%,#17302c 55%,#10201e 100%)}
-.home img{object-fit:contain;object-position:50% 100%}
-@media(max-width:800px){.home img{object-fit:cover;object-position:50% 0}}
+.home{grid-template-columns:min(50%,calc((100vh - 54px)*.75)) 1fr}
+.home{grid-template-columns:min(50%,calc((100dvh - 54px)*.75)) 1fr}
+.home img{object-fit:cover;object-position:54% 50%}
+@media(max-width:800px){.home{grid-template-columns:1fr;grid-template-rows:auto auto;overflow:auto}.home .ph{width:min(100%,46.5vh);aspect-ratio:3/4;justify-self:center}}
